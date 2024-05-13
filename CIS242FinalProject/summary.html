@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Roboto:wght@400;700&family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="frankandFriends.js"></script>
+    <title>Order Summary</title>
+</head>
+
+<header id="pageHeader">
+
+    <div class="left-header-section">
+        <img src="media/frank_square.jpg" alt="Frank the dog"/>
+    </div>
+    <div class="center-header-section">
+        <h1>Frankie and Friends</h1>
+    </div>
+    <div class="right-header-section">
+        <h3>5324 Bark Lane<br>
+            Seattle, WA 98155<br>
+            206-922-4899
+        </h3>
+    </div>
+</header>
+
+<body>
+    
+    <nav  id="mainNav">
+        <a href="home.html">Home</a>
+        <br/>
+        <a href="about.html">About</a>
+        <br/>
+        <a href="contact.html">Contact Us</a>
+        <br/>
+    </nav>
+
+<article id="mainArticle">
+
+<h2>Thank you for your order!</h2>
+Your information package from Frankie and Friends is expected to arrive by:
+<div id="orderETA">
+    <!-- delivery ETA will be added here dynamically -->
+    No ETA - Unable to retrieve cookie.<br>
+    Try using firefox or live-server.
+</div>
+<div class="summaryBlock">
+This package will contain all the information for our services
+and how to schedule your order on our calendar.
+</div>
+Your information package will be delivered to:
+<div id="orderAddress">
+    <!-- delivery address will be added here dynamically -->
+    No Delivery Address - Unable to retrieve cookie.<br>
+    Try using firefox or live-server.
+</div>
+<div id="orderSummary">
+    <!-- Order summary will be added here dynamically -->
+</div>
+
+
+</article>
+<script>updateOrderSummary(); updateCustInfo();</script>
+</body>
+</html>

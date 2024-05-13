@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Roboto:wght@400;700&family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="frankandFriends.js"></script>
+    <title>Frankie and Friends</title>
+</head>
+<body>
+    <header id="pageHeader">
+
+        <div class="left-header-section">
+            <img src="media/frank_square.jpg" alt="Frank the dog"/>
+        </div>
+        <div class="center-header-section">
+            <h1>Frankie and Friends</h1>
+        </div>
+        <div class="right-header-section">
+            <h3>5324 Bark Lane<br>
+                Seattle, WA 98155<br>
+                206-922-4899
+            </h3>
+        </div>
+        
+    </header>
+
+    <nav id="mainNav">
+        <a href="home.html">Home   </a>
+        <br/>
+        <a href="about.html">About</a>
+        <br/>
+        <a href="order.html">Order</a>
+        <br/>
+        
+       
+    </nav>
+
+    <article id="mainArticle">
+        <h1>
+        Contact Us
+        </h1>
+        <h2>Please fill out the contact form</h2>
+        <div class="" id="errorMessage"></div>
+
+        <div class="contactUs">
+            <div>First name *:</div>
+            <div><input name="firstname"  type="text" id="firstname"></div>
+    
+            <div>Last name *:</div>
+            <div><input name="lastname" type="text" id="lastname"></div>
+    
+            <div>Email *:</div>
+            <div><input name="email" type="text" id="email"></div>
+           
+            <div>Phone Number *:</div>
+            <div><input name="phone" type="text" id="phone"></div>
+            
+            <div>Explain the request *:</div>
+            <div><textarea id="note" name="note" rows="10" cols="50"></textarea></div>
+            <br><br>
+           
+            <input id="contactus" type="submit" value="Contact Us!">
+        </div>
+      
+  
+    </article>
+
+    <div id="shoppingCart">
+        <img class="frankPic" src="media/frank_puppy.jpg" alt="Frank the dog"/>
+    </div>
+    <script>addContactFormEventListeners();</script>
+</body>
+</html>

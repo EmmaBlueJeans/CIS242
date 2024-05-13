@@ -1,0 +1,18 @@
+/* This overides some of the layout elements specifically
+   for the about us page */
+
+body {
+    grid-template-areas: 
+    "header header header"
+    "nav article article"
+    "nav cart cart";
+    grid-template-columns: 1fr 3fr 1fr;
+}
+
+#mainArticle { 
+    justify-content: left;
+}
+
+#shoppingCart { 
+    visibility: hidden;
+}

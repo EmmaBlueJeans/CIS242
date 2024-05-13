@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Emma Dennis</h1>
+<h2>My First JavaScript</h2>
+
+
+
+<button type ="button" onclick="document.getElementById('demo').innerHTML = Date()">
+ Click me to display Date and Time.
+ </button>
+<br/>
+<br/>
+<button type = "button" onclick="var myDate = new Date();document.getElementById('demo').innerHTML = myDate.getFullYear()">
+Display Year only. </button>
+<br/>
+<br/>
+<button type = "button" onclick="var myDate = new Date();document.getElementById('demo').innerHTML = myDate.getMonth()+1">
+Display Month only. </button>
+<br/>
+<br/>
+<button type = "button" onclick="var myDate = new Date();document.getElementById('demo').innerHTML = myDate.getDay()+1">
+Display Day only. </button>
+<br/>
+<br/>
+<button type = "button" onclick="var myDate = new Date();document.getElementById('demo').innerHTML = myDate.getMonth()+1 +'/' + myDate.getDate() + '/' + myDate.getFullYear()">
+Display Full date. </button>
+<br/>
+<br/>
+
+
+
+<p id="demo"></p>
+
+</body>
+</html>
